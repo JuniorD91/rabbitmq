@@ -26,6 +26,11 @@ public class Tut2Config {
         public Tut2Receiver receiver2() {
             return new Tut2Receiver(2);
         }
+
+        @Bean
+        public Tut2Receiver receiver3() {
+            return new Tut2Receiver(3);
+        }
     }
 
     @Profile("sender")
